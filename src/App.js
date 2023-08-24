@@ -32,6 +32,7 @@ function App() {
 
     const handleAddTenant = () => {
         setEditedTenant({ id: null, name: "" });
+        setTenantDialogOpen(true);
     };
 
     const handleSaveTenant = () => {
@@ -51,7 +52,9 @@ function App() {
     const handleSaveEditedTenant = () => {
         if (editedTenant.name.trim() !== "") {
             const updatedTenants = tenants.map((tenant) =>
-                tenant.id === editedTenant.id ? editedTenant : tenant
+                tenant.id === editedTenant.id ?
+                {...tenant, name: editedTenant.name } :
+                tenant
             );
             setTenants(updatedTenants);
             setEditTenantDialogOpen(false);
@@ -137,7 +140,7 @@ function App() {
                 Tenants { " " } <
                 /Typography>{" "} <
                 List > { " " } {
-                    tenants.map((tenant, id) => ( <
+                    tenants.map((tenant) => ( <
                         ListItem key = { tenant.id }
                         sx = {
                             {
