@@ -3,8 +3,8 @@ export const PropertyData = [{
         name: 'Signature Global Park',
         address: 'Sector 38,Gurgaon',
         tenants: [
-            { name: 'Hritik' },
-            { name: 'Abhishek' },
+            { id: 101, name: 'Hritik' },
+            { id: 102, name: 'Abhishek' },
         ],
     },
     {
@@ -12,8 +12,8 @@ export const PropertyData = [{
         name: 'Suncity Platinum Towers',
         address: '619, DownTown',
         tenants: [
-            { name: 'Piyush' },
-            { name: 'Deepika' },
+            { id: 201, name: 'Piyush' },
+            { id: 202, name: 'Deepika' },
         ],
     },
 
@@ -23,8 +23,8 @@ export const PropertyData = [{
         name: 'DLF Magnolias',
         address: '54,sector 23,Gurgaon',
         tenants: [
-            { name: 'Mridul' },
-            { name: 'Mehek' },
+            { id: 301, name: 'Mridul' },
+            { id: 302, name: 'Mehek' },
         ],
     },
 
@@ -33,8 +33,8 @@ export const PropertyData = [{
         name: 'Emaar Marbella',
         address: '193-12 Golf Course road',
         tenants: [
-            { name: 'Dikshita' },
-            { name: 'Ananya' },
+            { id: 401, name: 'Dikshita' },
+            { id: 402, name: 'Ananya' },
         ],
     },
 ];
